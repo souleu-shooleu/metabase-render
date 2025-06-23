@@ -3,8 +3,7 @@ services:
     name: metabase
     env: docker
     plan: free
-    autoDeploy: false
-    dockerfilePath: Dockerfile
+    dockerfilePath: ./Dockerfile
     envVars:
       - key: MB_DB_TYPE
         value: postgres
@@ -18,3 +17,4 @@ services:
         value: shooleu
       - key: MB_DB_PASS
         value: M@reme1994
+

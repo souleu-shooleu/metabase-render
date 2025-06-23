@@ -8,13 +8,12 @@ services:
       - key: MB_DB_TYPE
         value: postgres
       - key: MB_DB_HOST
-        value: containers-us-west-23.railway.app
+        value: dpg-d1cpbg7fte5s738scfrg-a
       - key: MB_DB_PORT
-        value: 35351
+        value: 5432
       - key: MB_DB_DBNAME
-        value: railway
+        value: metabase_db_an0z
       - key: MB_DB_USER
-        value: shooleu
-      - key: MB_DB_PASS
-        value: M@reme1994
+        value: metabase_db_an0z_user
+      
 

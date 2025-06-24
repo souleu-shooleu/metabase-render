@@ -3,20 +3,22 @@ services:
     name: metabase
     env: docker
     plan: free
-    dockerfilePath: ./Dockerfile
+    region: oregon
+    dockerfilePath: Dockerfile
     envVars:
-	- key: PORT
-        value: 3000
       - key: MB_DB_TYPE
         value: postgres
-      - key: MB_DB_HOST
-        value: dpg-d1cpbg7fte5s738scfrg-a
-      - key: MB_DB_PORT
-        value: 5432
       - key: MB_DB_DBNAME
         value: metabase_db_an0z
+      - key: MB_DB_HOST
+        value: dpg-d1cpbg7fte5s738scfrg-a.oregon-postgres.render.com
+      - key: MB_DB_PORT
+        value: 5432
       - key: MB_DB_USER
         value: metabase_db_an0z_user
       - key: MB_DB_PASS
         value: 5UVw3xZNr7XNoLqxpeGjwrAqJnXCDGUM
+      - key: PORT
+        value: 3000
+
 

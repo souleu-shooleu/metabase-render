@@ -5,6 +5,8 @@ services:
     plan: free
     dockerfilePath: ./Dockerfile
     envVars:
+	- key: PORT
+        value: 3000
       - key: MB_DB_TYPE
         value: postgres
       - key: MB_DB_HOST
